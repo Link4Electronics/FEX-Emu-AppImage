@@ -39,8 +39,13 @@ get-debloated-pkgs --add-common --prefer-nano
 # else
 # 	regular build steps
 # fi
+echo "Making nightly build of FEX-Emu..."
+echo "---------------------------------------------------------------"
+REPO="https://github.com/FEX-Emu/FEX"
+VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
+git clone --recursive --depth 1 "$REPO" ./FEX
+echo "$VERSION" > ~/version
 
-git clone --recursive --depth 1 https://github.com/FEX-Emu/FEX.git
 cd FEX
 mkdir build && cd build
 CC=clang CXX=clang++ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja ..
