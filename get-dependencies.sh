@@ -48,9 +48,12 @@ echo "$VERSION" > ~/version
 cd FEX
 mkdir build && cd build
 CC=clang CXX=clang++ cmake .. \
+    -DCMAKE_AR=/usr/bin/ar \
+    -DCMAKE_RANLIB=/usr/bin/ranlib \
     -DCMAKE_C_COMPILER_AR=/usr/bin/ar \
     -DCMAKE_CXX_COMPILER_AR=/usr/bin/ar \
-    -DCMAKE_AR=/usr/bin/ar \
+    -DCMAKE_C_COMPILER_RANLIB=/usr/bin/ranlib \
+    -DCMAKE_CXX_COMPILER_RANLIB=/usr/bin/ranlib \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
     -DUSE_LINKER=lld \
