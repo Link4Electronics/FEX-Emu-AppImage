@@ -18,6 +18,7 @@ pacman -Syu --noconfirm \
     python            \
     python-setuptools \
     qt5-base          \
+    qt5-declarative   \
     sdl3              \
     vulkan-headers
 
