@@ -16,7 +16,7 @@ export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/FEX* /usr/lib/libFEXCore.so /usr/share/fex-emu/* #/usr/share/binfmts/FEX* /var/lib/binfmts/FEX*
-echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
+#echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 
