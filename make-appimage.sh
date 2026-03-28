@@ -10,7 +10,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/FEX-Emu/FEX/refs/heads/main/Source/Tools/FEXConfig/icon.png
 export DESKTOP=DUMMY
 export MAIN_BIN=FEX
-export DEPLOY_OPENGL=1
+export DEPLOY_QT=1
 export DEPLOY_VULKAN=1
 export DEPLOY_PIPEWIRE=1
 
