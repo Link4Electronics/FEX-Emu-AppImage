@@ -10,13 +10,13 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/FEX-Emu/FEX/refs/heads/main/Source/Tools/FEXConfig/icon.png
 export DESKTOP=DUMMY
-export MAIN_BIN=FEXBash
+export MAIN_BIN=FEX
 export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/FEX*
+quick-sharun /usr/bin/FEX* /usr/share/binfmts/FEX* /var/lib/binfmts/FEX*
 
 # Additional changes can be done in between here
 
