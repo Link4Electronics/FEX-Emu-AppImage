@@ -15,7 +15,7 @@ export DEPLOY_VULKAN=1
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/FEX* /usr/share/binfmts/FEX* /var/lib/binfmts/FEX*
+quick-sharun /usr/bin/FEX* /usr/lib/libFEXCore.so /usr/share/fex-emu/* #/usr/share/binfmts/FEX* /var/lib/binfmts/FEX*
 
 # Additional changes can be done in between here
 
