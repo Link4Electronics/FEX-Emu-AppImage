@@ -47,7 +47,15 @@ echo "$VERSION" > ~/version
 
 cd FEX
 mkdir build && cd build
-CC=clang CXX=clang++ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja ..
+CC=clang CXX=clang++ cmake .. \
+    -DCMAKE_AR=/usr/bin/ar \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DUSE_LINKER=lld \
+    -DENABLE_LTO=True \
+    -DBUILD_TESTING=False \
+    -DENABLE_ASSERTIONS=False \
+    -G Ninja
 ninja
 ninja install
 ninja binfmt_misc
