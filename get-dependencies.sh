@@ -9,6 +9,9 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake             \
     clang             \
+    curl              \
+    erofs-utils       \
+    erofsfuse         \
     fmt               \
     libdecor          \
     lld               \
@@ -20,6 +23,8 @@ pacman -Syu --noconfirm \
     qt6-base          \
     qt6-declarative   \
     sdl3              \
+    squashfs-tools    \
+    squashfuse        \
     vulkan-headers
 
 echo "Installing debloated packages..."
