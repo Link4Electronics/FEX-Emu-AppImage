@@ -17,6 +17,7 @@ pacman -Syu --noconfirm \
     pipewire-jack     \
     python            \
     python-setuptools \
+    qt5-base          \
     sdl3              \
     vulkan-headers
 
