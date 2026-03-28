@@ -48,6 +48,7 @@ echo "$VERSION" > ~/version
 cd FEX
 mkdir build && cd build
 CC=clang CXX=clang++ cmake .. \
+    -DENABLE_BINFMT=OFF \
     -DCMAKE_AR=/usr/bin/ar \
     -DCMAKE_RANLIB=/usr/bin/ranlib \
     -DCMAKE_C_COMPILER_AR=/usr/bin/ar \
@@ -63,4 +64,4 @@ CC=clang CXX=clang++ cmake .. \
     -G Ninja
 ninja
 ninja install
-ninja binfmt_misc
+#ninja binfmt_misc
