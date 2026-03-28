@@ -7,14 +7,16 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake          \
-    clang          \
-    libdecor       \
-    ninja          \
-    pipewire-audio \
-    pipewire-jack  \
-    python         \
-    sdl3           \
+    cmake             \
+    clang             \
+    libdecor          \
+    lld               \
+    ninja             \
+    pipewire-audio    \
+    pipewire-jack     \
+    python            \
+    python-setuptools \
+    sdl3              \
     vulkan-headers
 
 echo "Installing debloated packages..."
