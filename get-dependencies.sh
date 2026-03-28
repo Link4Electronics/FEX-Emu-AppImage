@@ -9,6 +9,7 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake             \
     clang             \
+    fmt               \
     libdecor          \
     lld               \
     ninja             \
