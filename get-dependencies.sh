@@ -48,6 +48,8 @@ echo "$VERSION" > ~/version
 cd FEX
 mkdir build && cd build
 CC=clang CXX=clang++ cmake .. \
+    -DCMAKE_C_COMPILER_AR=/usr/bin/ar \
+    -DCMAKE_CXX_COMPILER_AR=/usr/bin/ar \
     -DCMAKE_AR=/usr/bin/ar \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
