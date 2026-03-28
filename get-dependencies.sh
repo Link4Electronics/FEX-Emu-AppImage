@@ -7,7 +7,6 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    binutils          \
     cmake             \
     clang             \
     fmt               \
@@ -18,8 +17,8 @@ pacman -Syu --noconfirm \
     pipewire-jack     \
     python            \
     python-setuptools \
-    qt5-base          \
-    qt5-declarative   \
+    qt6-base          \
+    qt6-declarative   \
     sdl3              \
     vulkan-headers
 
