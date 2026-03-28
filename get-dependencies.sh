@@ -7,18 +7,22 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    libdecor \
-    sdl2
+    cmake          \
+    clang          \
+    libdecor       \
+    ninja          \
+    pipewire-audio \
+    pipewire-jack  \
+    python         \
+    sdl3           \
+    vulkan-headers
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package fex-emu-wine-git
-cd /usr/bin
-ls
-
+#make-aur-package
 
 # If the application needs to be manually built that has to be done down here
 
@@ -29,3 +33,11 @@ ls
 # else
 # 	regular build steps
 # fi
+
+git clone --recursive --depth 1 https://github.com/FEX-Emu/FEX.git
+cd FEX
+mkdir build && cd build
+CC=clang CXX=clang++ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja ..
+ninja
+ninja install
+ninja binfmt_misc
