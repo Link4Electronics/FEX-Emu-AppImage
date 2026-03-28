@@ -13,15 +13,19 @@ pacman -Syu --noconfirm \
     erofs-utils       \
     erofsfuse         \
     fmt               \
+    kvantum           \
     libdecor          \
     lld               \
+    lxqt-qtplugin     \
     ninja             \
     pipewire-audio    \
     pipewire-jack     \
     python            \
     python-setuptools \
+    qqc2-breeze-style \
     qt6-base          \
     qt6-declarative   \
+    qt6ct             \
     sdl3              \
     squashfs-tools    \
     squashfuse        \
