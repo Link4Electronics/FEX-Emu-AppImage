@@ -9,7 +9,6 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake             \
     clang             \
-    curl              \
     erofs-utils       \
     erofsfuse         \
     fmt               \
