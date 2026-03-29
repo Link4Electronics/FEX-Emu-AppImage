@@ -22,7 +22,6 @@ pacman -Syu --noconfirm \
     python            \
     python-setuptools \
     qqc2-breeze-style \
-    qt6-base          \
     qt6-declarative   \
     qt6ct             \
     sdl3              \
