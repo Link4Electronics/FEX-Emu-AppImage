@@ -1,6 +1,6 @@
 <div align="center">
 
-# FEX-Emu-AppImage 🐧
+# WIP! FEX-Emu-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/FEX-Emu-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/FEX-Emu-AppImage/releases/latest)
 [![CI Build Status](https://github.com/pkgforge-dev/FEX-Emu-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/FEX-Emu-AppImage/releases/latest)
