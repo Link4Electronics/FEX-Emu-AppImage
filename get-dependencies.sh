@@ -18,7 +18,6 @@ pacman -Syu --noconfirm \
     ninja             \
     pipewire-audio    \
     pipewire-jack     \
-    python            \
     python-setuptools \
     qqc2-breeze-style \
     qt6-declarative   \
